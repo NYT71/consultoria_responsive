@@ -1,5 +1,5 @@
 body {
-    background-color: #ececec;
+    background-color: #fdd9d9;
     font-size: 88%;
     font-family: 'Arial', sans-serif;
     color: #666666;
@@ -59,14 +59,8 @@ a:hover{
     color: #000;
     border-radius: 5px;
 }
-#contenido {
-    width: 70%;
-    float: left;
-    overflow: auto;
-
-}
-#contenido article {
-    background-color: #fff;
+#contenido #articles {
+    background-color: rgb(255, 255, 255);
     overflow: auto;
     padding: 10px 20px;
     margin-top: 10px;
@@ -90,14 +84,13 @@ a:hover{
     background-color: #000;
 }
 #lateral {
-    width: 30%;
-    float: left;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 10px;
 }
 #lateral .bloque{
     background-color: #fff;
     overflow: hidden;
-    padding: 10px 20px;
-    margin: 10px 0 0 10px;
 }
 footer {
     background-color: #882433;
@@ -111,4 +104,19 @@ footer p{
     margin: 0;
     padding: 10px 0 0 0;
     text-align: center;
+}
+#main {
+    width: 100%;
+}
+#contenido {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+#articles {
+    width: 100%;
+}
+#aside-xd {
+    width: 30%;
 }
